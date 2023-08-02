@@ -5,7 +5,7 @@ class ColorState extends Equatable {
 
   const ColorState({this.color = Colors.red});
 
-  factory ColorState.initial() => ColorState();
+  factory ColorState.initial() => const ColorState();
 
   ColorState copyWith({
     Color? color,
