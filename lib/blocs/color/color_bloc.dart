@@ -13,6 +13,8 @@ class ColorBloc extends Bloc<ColorEvent, ColorState> {
       } else if (state.color == Colors.green) {
         emit(state.copyWith(color: Colors.blue));
       } else if (state.color == Colors.blue) {
+        emit(state.copyWith(color: Colors.black));
+      } else if (state.color == Colors.black) {
         emit(state.copyWith(color: Colors.red));
       }
     });
